@@ -1,3 +1,25 @@
 .main{
+}
 
+.main__header{
+
+}
+
+.main__content{
+	background: rgb(212, 212, 212);
+	min-height: 100px;
+}
+
+.main__footer{
+	background: rgb(54, 54, 54);
+	padding: 0.5em $content-side-padding;
+
+	li{
+		display: inline-block;
+	}
+
+	a{
+		text-decoration: none;
+		color: white;
+	}
 }

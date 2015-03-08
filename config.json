@@ -1,6 +1,10 @@
 {
 	"distribute": {
 		"local": ""
+	},
+	"images": {
+		"home": {
+			"src": "images/home.jpg"
+		}
 	}
-
 }

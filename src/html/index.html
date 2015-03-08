@@ -6,13 +6,37 @@
 
     {{> head}}
 
-    <body>
+    <body class='body'>
 
-        {{> sections/header}}
+    		<div class='content'>
 
-        {{> sections/main}}
+	        {{> sections/header}}
 
-        {{> sections/footer}}
+	        <main class='main'>
+
+	        	<div class='main__header'>
+	        	</div>
+
+	        	<div class='main__content'>
+	        		{{#with images.home}}
+	        			{{> helpers/picture}}
+	        		{{/with}}
+	        	</div>
+
+	        	<ul class='main__footer'>
+	        		<li>
+	        			<a href='http://programma.vpro.nl/deavonden/Dossiers/Beeldende-kunst.html?playurn=urn:vpro:media:program:26520899'>Beeldende kunst Liesbeth Kraaijpoel</a>
+	        		</li>
+	        		<li>
+	        			<a href='http://youtu.be/zakq3a-P1fA'>Liesbeth Kraaijpoel, portretten van musici</a>
+	        		</li>
+	        	</ul>
+
+					</main>
+
+	        {{> sections/footer}}
+
+	      </div>
 
     </body>
 
