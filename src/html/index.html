@@ -8,7 +8,7 @@
 
     <body class='body'>
 
-    		<div class='content'>
+    		<div class='content home'>
 
 	        {{> sections/header}}
 
@@ -18,7 +18,7 @@
 	        	</div>
 
 	        	<div class='main__content'>
-	        		{{#with images.home}}
+	        		{{#with content.home}}
 	        			{{> helpers/picture}}
 	        		{{/with}}
 	        	</div>

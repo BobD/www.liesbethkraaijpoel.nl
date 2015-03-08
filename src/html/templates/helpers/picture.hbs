@@ -1,6 +1,8 @@
-<picture class='picture' data-title='phh'>
+<picture class='picture'>
 	<img data-test='{{height}}' src='{{src}}' alt='{{title}}' class='picture__image'>
+	{{#if title}}
 	<figcaption class='picture__caption'>
 		{{title}}
 	</figcaption>
+	{{/if}}
 </picture>
