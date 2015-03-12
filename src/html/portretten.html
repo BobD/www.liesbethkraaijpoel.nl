@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    {{> head}}
+
+    <body class='body'>
+
+    	<div class='content portretten'>
+
+        {{> sections/header active='portretten'}}
+
+         <main class='main'>
+         	<ul class='main__content collection'>
+         			{{#each content.portretten}}
+         				<li>
+         					<a href="slide.html">
+         					{{> helpers/picture}}
+         					</a>
+         				</li>
+         			{{/each}}
+         			<!-- http://www.barrelny.com/blog/text-align-justify-and-rwd/ -->
+         			<li/>
+         			<li/>
+         	</ul>
+         </main>
+
+        {{> sections/footer}}
+
+       </div>
+
+    </body>
+
+</html>

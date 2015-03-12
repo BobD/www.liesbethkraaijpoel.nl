@@ -1,0 +1,31 @@
+.text{
+
+	.section{
+		margin-bottom: $content-side-padding * 2;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		h1,
+		h2,
+		h3{
+			margin-bottom: $content-side-padding;
+			text-transform: uppercase;
+
+			> small{
+				display: inline-block;
+				font-weight: normal;
+				text-transform: none;
+			}
+		}
+
+		p{
+
+			> img{
+				margin: 0 $content-side-padding 0 0;
+				float: left;
+			}
+		}
+	}
+}

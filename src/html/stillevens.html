@@ -8,11 +8,24 @@
 
     <body class='body'>
 
-    	<div class='content'>
+    	<div class='content stillevens'>
 
-        {{> sections/header}}
+        {{> sections/header active='stillevens'}}
 
-        {{> sections/main}}
+         <main class='main'>
+         	<ul class='main__content collection'>
+         			{{#each content.stillevens}}
+         				<li>
+         					<a href="slide.html">
+         					{{> helpers/picture}}
+         					</a>
+         				</li>
+         			{{/each}}
+         			<!-- http://www.barrelny.com/blog/text-align-justify-and-rwd/ -->
+         			<li/>
+         			<li/>
+         	</ul>
+         </main>
 
         {{> sections/footer}}
 

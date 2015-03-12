@@ -1,22 +1,22 @@
 <nav class='navigation'>
   <ul>
-  	<li>
-  		<a href='/'>Home</a>
+  	<li {{#menu_active active 'home'}}{{/menu_active}}>
+  		<a href='index.html'>Home</a>
   	</li>
-  	 <li>
+  	 <li {{#menu_active active 'stillevens'}}{{/menu_active}}>
   		<a href='stillevens.html'>Stillevens</a>
   	</li>
-  	<li>
+  	<li {{#menu_active active 'portretten'}}{{/menu_active}}>
   		<a href='portretten.html'>Portretten</a>
   	</li>
-  	<li>
+  	<li {{#menu_active active 'diversen'}}{{/menu_active}}>
   		<a href='diversen.html'>Diversen</a>
   	</li>
-  	<li>
-  		<a href='tentoonstellingen.html'>Tentoonstellingen</a>
+  	<li {{#menu_active active 'cv'}}{{/menu_active}}>
+  		<a href='cv.html'>CV</a>
   	</li>
-  	<li>
-  		<a href='contact.html'>Content</a>
+  	<li {{#menu_active active 'contact'}}{{/menu_active}}>
+  		<a href='contact.html'>Contact</a>
   	</li>
   </ul>
 </nav>

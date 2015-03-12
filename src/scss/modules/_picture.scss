@@ -1,5 +1,10 @@
 .picture{
-	img{
+
+	.picture__image{
 		display: block;
+	}
+
+	.picture__caption{
+		margin-top: 1em;
 	}
 }

@@ -2,8 +2,34 @@
 
 	&.home{
 		.main__content{
+			padding: 0;
+
 			img{
 				width: 100%;
+			}
+		}
+	}
+
+	&.contact{
+
+		.main__content{
+			padding: 0;
+			overflow: hidden;
+		}
+
+		.section{
+			&.address{
+				float: left;
+				width: 35%;
+				padding: $content-side-padding;
+			}
+
+			&.image{
+				float: right;
+				width: 60%;
+				img{
+					width: 100%;
+				}
 			}
 		}
 	}

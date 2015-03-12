@@ -1,5 +1,71 @@
 {
 	"home": {
 		"src": "images/home.jpg"
-	}
+	},
+	"contact": {
+		"src": "images/img/contact_def.jpg"
+	},
+	"picture": {
+		"src": "images/stilleven/01.jpg",
+		"description": "Geel aardewerk,40x40cm,olie/doek,2007"
+	},
+	"stillevens": [
+		{"src": "images/stilleven/01t.jpg"},
+		{"src": "images/stilleven/02t.jpg"},
+		{"src": "images/stilleven/03t.jpg"},
+		{"src": "images/stilleven/04t.jpg"},
+		{"src": "images/stilleven/05t.jpg"},
+		{"src": "images/stilleven/06t.jpg"},
+		{"src": "images/stilleven/07t.jpg"},
+		{"src": "images/stilleven/08t.jpg"},
+		{"src": "images/stilleven/09t.jpg"},
+		{"src": "images/stilleven/10t.jpg"},
+		{"src": "images/stilleven/11t.jpg"},
+		{"src": "images/stilleven/12t.jpg"},
+		{"src": "images/stilleven/13t.jpg"},
+		{"src": "images/stilleven/14t.jpg"},
+		{"src": "images/stilleven/15t.jpg"},
+		{"src": "images/stilleven/16t.jpg"},
+		{"src": "images/stilleven/17t.jpg"},
+		{"src": "images/stilleven/18t.jpg"},
+		{"src": "images/stilleven/19t.jpg"},
+		{"src": "images/stilleven/20t.jpg"},
+		{"src": "images/stilleven/21t.jpg"},
+		{"src": "images/stilleven/22t.jpg"},
+		{"src": "images/stilleven/23t.jpg"}
+	],
+	"portretten": [
+		{"src": "images/portret/01t.jpg"},
+		{"src": "images/portret/02t.jpg"},
+		{"src": "images/portret/03t.jpg"},
+		{"src": "images/portret/04t.jpg"},
+		{"src": "images/portret/05t.jpg"},
+		{"src": "images/portret/06t.jpg"},
+		{"src": "images/portret/07t.jpg"},
+		{"src": "images/portret/08t.jpg"},
+		{"src": "images/portret/09t.jpg"},
+		{"src": "images/portret/10t.jpg"},
+		{"src": "images/portret/11t.jpg"},
+		{"src": "images/portret/12t.jpg"},
+		{"src": "images/portret/13t.jpg"},
+		{"src": "images/portret/14t.jpg"},
+		{"src": "images/portret/15t.jpg"},
+		{"src": "images/portret/16t.jpg"},
+		{"src": "images/portret/17t.jpg"}
+	],
+	"diversen": [
+		{"src": "images/diversen/diversen_01t.jpg"},
+		{"src": "images/diversen/diversen_02t.jpg"},
+		{"src": "images/diversen/diversen_03t.jpg"},
+		{"src": "images/diversen/diversen_04t.jpg"},
+		{"src": "images/diversen/diversen_05t.jpg"},
+		{"src": "images/diversen/diversen_06t.jpg"},
+		{"src": "images/diversen/diversen_07t.jpg"},
+		{"src": "images/diversen/diversen_08t.jpg"},
+		{"src": "images/diversen/diversen_09t.jpg"},
+		{"src": "images/diversen/diversen_10t.jpg"},
+		{"src": "images/diversen/diversen_11t.jpg"},
+		{"src": "images/diversen/diversen_12t.jpg"},
+		{"src": "images/diversen/diversen_13t.jpg"}
+	]
 }

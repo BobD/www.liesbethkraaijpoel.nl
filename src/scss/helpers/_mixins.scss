@@ -1,64 +1,20 @@
-@mixin link(){
+@mixin justified-layout(){
+  // http://www.barrelny.com/blog/text-align-justify-and-rwd/
+  text-align: justify;
+  font-size: 0.1px;
 
-  a{
-    text-decoration: none;
-    text-transform: capitalize;
-    color: inherit;
-    // transition: color 0.05s;
-
-    &:hover{
-      color: $active-link-color;
-    }
-  }
-
-	&[class$="active"]{
-		color: $active-link-color;
-	}
-}
-
-@mixin text-link($color: $text-color-dark){
-  a[href]{
-    text-decoration: none;
-    color: $color;
-    position: relative;
+  &:after{
+    content: '';
     display: inline-block;
-
-    // http://codepen.io/acusti/pen/gbabKQ
-    // background-image: linear-gradient(rgba(#000, 0.25) 0%, #000 100%);
-    // background-repeat: repeat-x;
-    // background-size: 1px 1px;
-    // background-position: 0 78%;
-    // text-shadow: 3px 0 #83afb0, 2px 0 #83afb0, 1px 0 #83afb0, -1px 0 #83afb0, -2px 0 #83afb0, -3px 0 #83afb0;
-
-    &:before{
-      content: '';
-      display: inline-block;
-      position: absolute;
-      bottom: 3px;
-      left: 0;
-      right: 0;
-      border-bottom: thin solid $color;
-    }
-  }
-}
-
-@mixin box-padding($side_multiplier: 1){
-  padding: emRhythm(1) emRhythm($side_multiplier);
-}
-
-@mixin box-style($side_multiplier: 1){
-  @include box-padding($side_multiplier);
-}
-
-// http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
-@mixin tweak-points($point) {
-
-  @if $point == small {
-    @media (max-width: 1600px) { @content; }
+    width: 100%;
+    height: 0;
   }
 
+  > *{
+    display: inline-block;
+    vertical-align: top;
+  }
 }
-
 
 
 // ----
@@ -95,35 +51,6 @@
   }
 }
 
-@mixin vertical-dash(){
-  &:after{
-    content: '';
-    display: inline-block;
-    height: emRhythm(3);
-    border-right: thin solid white;
-    vertical-align: middle;
-    margin: 0 3px;
-  }
-
-  &:last-child{
-    &:after{
-      display: none;
-    }
-  }
-}
-
-@mixin horizontal-dash($bottom: - emRhythm(0.5)){
-  position: relative;
-  &:before{
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: $bottom;
-    left: 0;
-    right: 0;
-    border-bottom: thin solid white;
-  }
-}
 
 %clearfix {
   &:after {

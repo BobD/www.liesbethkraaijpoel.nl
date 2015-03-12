@@ -1,0 +1,31 @@
+.link{
+
+	> a{
+
+		&:hover{
+			color: $link-hover-color;
+		}
+
+		&:before{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 5px;
+			height: 20px;
+		}
+	}
+
+
+	&--vpro{
+		> a:before{
+			content: url('../images/links/vpro.gif');
+
+		}
+	}
+
+	&--youtube{
+		> a:before{
+			content: url('../images/links/you_tube.gif');
+		}
+	}
+
+}

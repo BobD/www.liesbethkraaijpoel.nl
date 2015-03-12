@@ -1,0 +1,23 @@
+.collection{
+	padding: $content-side-padding;
+
+	@include justified-layout();
+
+	// http://alistapart.com/article/quantity-queries-for-css
+	li:nth-last-child(0n+6) ~ li{
+		margin-bottom: 0;
+	}
+
+	> li{
+		width: 21%;
+		margin-bottom: 5%;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		img{
+			width: 100%;
+		}
+	}
+}

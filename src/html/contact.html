@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    {{> head}}
+
+    <body class='body'>
+
+    		<div class='content contact'>
+
+	        {{> sections/header active='contact'}}
+
+	        <main class='main'>
+
+	        	<div class='main__content text'>
+
+							<section class='section address'>
+								<h1>Contact</h1>
+								<p>
+									Liesbeth Kraaijpoel<br/>
+									van Breestraat 97 II<br/>
+									1071 ZJ Amsterdam<br/>
+									<a href="mailto:lkraaij@tele2.nl">lkraaij@tele2.nl</a><br/>
+									Telefoon: 020-6751559<br/>
+									Mobiel: 06-57536785<br/>
+								</p>
+							</section>
+
+							<section class='section image'>
+								{{#with content.home}}
+	        				{{> helpers/picture}}
+	        			{{/with}}
+							</section>
+
+	        	</div>
+
+	        	<ul class='main__footer'>
+	        		<li class='link link--vpro'>
+	        			<a href='http://programma.vpro.nl/deavonden/Dossiers/Beeldende-kunst.html?playurn=urn:vpro:media:program:26520899'>Beeldende kunst Liesbeth Kraaijpoel</a>
+	        		</li>
+	        		<li class='link link--youtube'>
+	        			<a href='http://youtu.be/zakq3a-P1fA'>Liesbeth Kraaijpoel, portretten van musici</a>
+	        		</li>
+	        	</ul>
+
+					</main>
+
+	        {{> sections/footer}}
+
+	      </div>
+
+    </body>
+
+</html>

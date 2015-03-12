@@ -8,14 +8,19 @@
 .main__content{
 	background: rgb(212, 212, 212);
 	min-height: 100px;
+	color: black;
+	padding: $content-side-padding;
 }
 
 .main__footer{
 	background: rgb(54, 54, 54);
 	padding: 0.5em $content-side-padding;
+	white-space: nowrap;
+	overflow: hidden;
 
 	li{
 		display: inline-block;
+		margin-right: 16px;
 	}
 
 	a{
