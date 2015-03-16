@@ -35,3 +35,21 @@
 	}
 
 }
+
+@include respond-to(small) {
+	.content{
+
+		&.contact{
+			.section{
+
+				&.address{
+					width: 100%;
+				}
+
+				&.image{
+					display: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,93 @@
+@include respond-to(small) {
+
+	.header{
+		h1{
+			font-size: 1.6em !important;
+		}
+	}
+
+	.navigation{
+		padding-top: 4% !important;
+		padding-bottom: 4% !important;
+
+		li{
+			display: block !important;
+
+			&.active{
+				&:before{
+					width: 0.5em !important;
+					height: 0.5em !important;
+					background: white !important;
+					left: -1em !important;
+					bottom: auto !important;
+					top: 50%;
+					margin-top: -0.25em;
+				}
+			}
+		}
+	}
+
+	.content{
+		min-width: 0 !important;;
+		width: 100% !important;
+		margin: 0 !important;
+	}
+
+	.collection{
+		> li{
+			width: 100% !important;
+			margin-bottom: 10% !important;
+
+			&:last-child{
+				margin-bottom: 0 !important;
+			}
+
+			&:empty{
+				display: none;
+			}
+		}
+	}
+
+	.collection-slide{
+		padding: 0 !important;
+
+		.collection-slide__nav{
+			display: none;
+		}
+
+		.picture__caption{
+			margin: $content-side-padding;
+		}
+	}
+
+	.text{
+		p{
+			img{
+				display: block;
+				width: 100%;
+				height: auto;
+				margin: $content-side-padding 0 !important;
+
+				&:first-child{
+					margin-top: 0 !important;
+				}
+			}
+		}
+	}
+}
+
+@include respond-to(medium) {
+
+	.content{
+		width: 75% !important;
+	}
+
+	.collection{
+		> li{
+			width: 30% !important;
+		}
+	}
+}
+
+@include respond-to(large) {
+}

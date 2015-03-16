@@ -1,7 +1,7 @@
 .navigation{
 	background-color: $navigation-background;
 	color: $navigation-color;
-	padding: 0.2em $content-side-padding;
+	padding: 0 $content-side-padding;
 
 	ul{
 		@include justified-layout();
@@ -9,11 +9,13 @@
 
 	li{
 		font-size: 12px;
+		vertical-align: bottom;
 	}
 
 	a{
 		text-decoration: none;
 		text-transform: uppercase;
+		font-weight: 700;
 		color: inherit;
 
 		&:hover{

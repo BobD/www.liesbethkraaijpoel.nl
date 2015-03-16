@@ -1,18 +1,29 @@
 .navigation{
 	li{
 		position: relative;
+		margin: 0.2em 0;
+
 		&.active{
 			&:before{
 				content: '';
 				display: block;
-				width: 0.5em;
-				height: 0.5em;
-				background: white;
+				width: 100%;
+				height: 3px;
+				bottom: -8px;
+				left: 0;
 				position: absolute;
-				right: 100%;
-				top: 50%;
-				margin-top: -0.25em;
-				margin-right: 0.5em;
+				background:	#7e005d;
+			}
+		}
+	}
+}
+
+.home,
+.contact{
+	 .navigation li.active{
+		&.active{
+			&:before{
+				background:	white;
 			}
 		}
 	}

@@ -2,17 +2,17 @@
 $page-padding:							15px;
 $page-background:						rgb(197, 197, 197);
 $content-color:							rgb(63, 34, 27);
-$navigation-background:			rgb(126, 0, 93);
-$content-side-padding:			20px;
-$navigation-color:					white;
-$text-color:								white;
-$link-hover-color:					#fcc;
+$navigation-background:					rgb(126, 0, 93);
+$content-side-padding:					20px;
+$navigation-color:						white;
+$text-color:							white;
+$link-hover-color:						#fcc;
 
 // https://github.com/ianrose/typesettings
-$base-vertical-unit: 				5px;
-$base-line-multi: 					4;
+$base-vertical-unit: 					5px;
+$base-line-multi: 						4;
 $base-font-size: 						11px;
-$ms-ratio: 									1.2;
+$ms-ratio: 								1.2;
 
 
 // Responsive
@@ -25,9 +25,7 @@ $ms-ratio: 									1.2;
 
 $screen:       "only screen and";
 $breakpoints: (
-  'mobile'  		: '#{$screen} ( max-width: 320px )',
-  'small'  			: '#{$screen} ( min-width: 321px )  and ( max-width: 69.999em )',
-  'medium' 			: '#{$screen} ( min-width: 70em ) and ( max-width: 84.999em )',
-  'large'  			: '#{$screen} ( min-width: 85em ) and ( max-width: 99.999em )',
-  'super-large' : '#{$screen} ( min-width: 100em )'
+  'small'  		: '#{$screen} ( max-width: 320px )',
+  'medium'  	: '#{$screen} ( min-width: 321px )  and ( max-width: 49.999em )',
+  'large' 		: '#{$screen} ( min-width: 50em ) '
 );

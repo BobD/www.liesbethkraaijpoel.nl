@@ -2,9 +2,11 @@ $nav-arrow-size: 45px;
 
 .collection-slide{
 	position: relative;
-	padding: $content-side-padding ($content-side-padding * 4);
+	// padding: adding: $content-side-padding ($content-side-padding * 4);
 
 	> picture{
+		display: inline-block;
+		width: 100%;
 	}
 
 	img{
@@ -14,8 +16,8 @@ $nav-arrow-size: 45px;
 	.collection-slide__nav{
 		position: absolute;
 		top: $content-side-padding;
-		right: $content-side-padding;
-		left: $content-side-padding;
+		right: -($nav-arrow-size + 10px);
+		left: -($nav-arrow-size + 10px);
 		bottom: $content-side-padding;
 	}
 
@@ -29,6 +31,7 @@ $nav-arrow-size: 45px;
 		opacity: 0.2;
 		cursor: pointer;
 		transition: opacity 0.5s;
+		z-index: 1;
 
 		&:hover{
 			opacity: 1;
