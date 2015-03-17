@@ -1,10 +1,8 @@
 requirejs.config({
    paths: {
-   	 jquery: 'lib/jquery/jquery.min',
+   	 jquery: '../bower_components/jquery/dist/jquery.min',
    	 domReady: 'modules/helpers/domready',
    	 text: 'modules/helpers/text',
-     underscore: 'lib/underscore/underscore-min',
-     routes: 'modules/routes',
      section: 'modules/sections/section'
   }
 });
@@ -12,17 +10,13 @@ requirejs.config({
 require([
 	'!domReady',
 	'jquery',
-	'routes',
 	'section'
-	], function(domReady, $, routes, section) {
-	var albums = JSON.parse(albums);
+	], function(domReady, $, section) {
 
 	$('html').removeClass('no-js').addClass('js');
 
 	section.init({
 		$container: $('body')
 	});
-
-	routes.init({});
 
 });

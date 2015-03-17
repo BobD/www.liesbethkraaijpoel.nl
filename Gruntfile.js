@@ -27,15 +27,15 @@ module.exports = function(grunt) {
        files: [
         {expand: true, cwd: 'src/images/', src: ['**/*.*'], dest: 'build/images', filter: 'isFile'},
         {expand: true, cwd: 'src/scripts/', src: ['**/*.*'], dest: 'build/scripts', filter: 'isFile'},
-        {src: 'src/data/albums.json',  dest: 'build/scripts/albums.json'},
-        {expand: true, cwd: 'bower_components/jquery/dist/', src: ['jquery.min.*'], dest: 'build/scripts/lib/jquery', filter: 'isFile'},
-        {expand: true, cwd: 'bower_components/underscore/', src: ['underscore-min.*'], dest: 'build/scripts/lib/underscore', filter: 'isFile'}
+        {expand: true, cwd: 'src/bower_components/', src: ['**/*.*'], dest: 'build/bower_components', filter: 'isFile'}
         ]
       },
       dist: {
         files: [
           {expand: true, cwd: 'build/css/', src: ['**/*.*'], dest: 'dist/css', filter: 'isFile'},
-          {expand: true, cwd: 'build/scripts/', src: ['**/*.*'], dest: 'dist/scripts', filter: 'isFile'}
+          {expand: true, cwd: 'build/scripts/', src: ['**/*.*'], dest: 'dist/scripts', filter: 'isFile'},
+          {expand: true, cwd: 'build/images/assets', src: ['**/*.*'], dest: 'dist/images/assets', filter: 'isFile'},
+          {expand: true, cwd: 'src/bower_components/', src: ['**/*.*'], dest: 'dist/bower_components', filter: 'isFile'}
         ]
       }
     },

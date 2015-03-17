@@ -14,6 +14,11 @@
 
          <main class='main'>
          	<div class='main__content collection-slide'>
+                <a href='#'>
+                {{#with content.picture}}
+         	      {{> helpers/picture}}
+                {{/with}}
+                </a>
                 <ul class='collection-slide__nav'>
                     <li class='collection-slide__previous'>
                         <a href='#'></a>
@@ -22,9 +27,6 @@
                         <a href='#'></a>
                     </li>
                 </ul>
-                {{#with content.picture}}
-         	      {{> helpers/picture}}
-                {{/with}}
          	</div>
          </main>
 

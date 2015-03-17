@@ -4,9 +4,17 @@
 		.main__content{
 			padding: 0;
 
-			img{
-				width: 100%;
+			.picture{
+				img{
+					width: 100% !important;
+					height: auto !important;
+				}
+
+				.picture__caption{
+					display: none;
+				}
 			}
+
 		}
 	}
 
@@ -27,8 +35,16 @@
 			&.image{
 				float: right;
 				width: 60%;
-				img{
-					width: 100%;
+				
+				.picture{
+					img{
+						width: 100% !important;
+						height: auto !important;
+					}
+
+					.picture__caption{
+						display: none;
+					}
 				}
 			}
 		}

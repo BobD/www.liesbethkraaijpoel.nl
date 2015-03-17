@@ -1,31 +1,27 @@
 .text{
+	h1,
+	h2,
+	h3{
 
-	.section{
-		margin-bottom: $content-side-padding * 2;
+		margin: $content-side-padding * 2 0 $content-side-padding 0;
+		text-transform: uppercase;
 
-		&:last-child{
-			margin-bottom: 0;
+		&:first-child{
+			margin-top: 0;
 		}
 
-		h1,
-		h2,
-		h3{
-			margin-bottom: $content-side-padding;
-			text-transform: uppercase;
-
-			> small{
-				display: inline-block;
-				font-weight: normal;
-				text-transform: none;
-			}
+		> small{
+			display: inline-block;
+			font-weight: normal;
+			text-transform: none;
 		}
+	}
 
-		p{
+	p{
 
-			> img{
-				margin: 0 $content-side-padding 0 0;
-				float: left;
-			}
+		> img{
+			margin: 0 $content-side-padding 0 0;
+			float: left;
 		}
 	}
 }
