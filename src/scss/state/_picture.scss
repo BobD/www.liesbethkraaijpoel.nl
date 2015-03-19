@@ -1,0 +1,40 @@
+.picture{
+	position: relative;
+	display: block;
+
+	&.thumb{
+		overflow: hidden;
+
+		.picture__caption{
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			font-size: $base-font-size;
+			padding: 10px;
+			color: white;
+			margin: 0;
+			transform: translateY(100%);
+			transition: 0.1s ease-out;
+			
+			&:before{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: black;
+				opacity: 0.5;
+				z-index: -1;
+			}
+		}
+
+		&:hover{
+			.picture__caption{
+				transform: translateY(0);
+			}
+		}
+	}
+}

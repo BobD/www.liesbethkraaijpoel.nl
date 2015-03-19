@@ -48,8 +48,13 @@
 		}
 	}
 
-	.collection-slide{
+	.image{
 		padding: 0 !important;
+
+		.picture__image{
+			width: 100%;
+			margin-top: $content-side-padding;
+		}
 
 		.collection-slide__nav{
 			display: none;

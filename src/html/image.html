@@ -10,20 +10,20 @@
 
     	<div class='content slide'>
 
-        {{> sections/header active='slide'}}
+        {{> sections/header active='stillevens'}}
 
          <main class='main'>
-         	<div class='main__content collection-slide'>
+         	<div class='main__content image'>
                 <a href='#'>
                 {{#with content.picture}}
          	      {{> helpers/picture}}
                 {{/with}}
                 </a>
-                <ul class='collection-slide__nav'>
-                    <li class='collection-slide__previous'>
+                <ul class='image__nav'>
+                    <li class='image__previous'>
                         <a href='#'></a>
                     </li>
-                    <li class='collection-slide__forward'>
+                    <li class='image__forward'>
                         <a href='#'></a>
                     </li>
                 </ul>
