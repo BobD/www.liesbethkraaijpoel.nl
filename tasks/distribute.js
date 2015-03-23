@@ -8,6 +8,7 @@ module.exports = function(grunt) {
 		if(grunt.file.isDir(config.distribute.local)){
 			grunt.config('copy.distribute.files', [
 				{expand: true, cwd: 'dist/css/', src: ['**/*.*'], dest: endPath + '/css', filter: 'isFile'},
+				{expand: true, cwd: 'dist/scripts/', src: ['**/*.*'], dest: endPath + '/scripts', filter: 'isFile'},
 				{expand: true, cwd: 'dist/images/assets', src: ['**/*.*'], dest: endPath + '/images/assets', filter: 'isFile'}
 			]);
 			grunt.task.run(['default', 'copy:distribute']);

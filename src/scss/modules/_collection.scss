@@ -8,6 +8,12 @@
 		margin-bottom: 0;
 	}
 
+	li:nth-last-child(0n+3) ~ li{
+		&:before{
+			display: none;
+		}
+	}
+
 	> li{
 		width: 21%;
 		margin-bottom: 5%;
@@ -38,6 +44,11 @@
 			left: 0;
 			background-color: $page-background;
 			background-image: url("../images/assets/background-pattern.png");
+		}
+
+		.picture{
+			width: 100%;
+			height: 100%;
 		}
 
 		img{
