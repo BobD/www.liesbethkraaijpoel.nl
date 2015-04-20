@@ -65,6 +65,10 @@
 		}
 	}
 
+	.image .picture{
+		width: 100% !important;
+	}
+
 	.text{
 		p{
 			img{
@@ -83,8 +87,12 @@
 
 @include respond-to(medium) {
 
+	.image .picture{
+		width: 90% !important;
+	}
+
 	.content{
-		width: 75% !important;
+		width: 70% !important;
 	}
 
 	.collection{

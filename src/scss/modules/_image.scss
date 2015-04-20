@@ -2,6 +2,8 @@ $nav-arrow-size: 45px;
 
 .image{
 	position: relative;
+	min-height: 500px;
+	text-align: center;
 
 	a{
 		display: block;
@@ -13,7 +15,7 @@ $nav-arrow-size: 45px;
 
 	.picture{
 		display: inline-block;
-		width: 100%;
+		width: 80%;
 	}
 
 	.picture__image{

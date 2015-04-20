@@ -5,6 +5,7 @@
 			padding: 0;
 
 			.picture{
+				
 				img{
 					width: 100% !important;
 					height: auto !important;
@@ -37,6 +38,9 @@
 				width: 60%;
 				
 				.picture{
+					display: block  !important;
+					width: 100% !important;
+
 					img{
 						width: 100% !important;
 						height: auto !important;

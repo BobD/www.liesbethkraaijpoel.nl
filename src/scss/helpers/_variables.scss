@@ -26,6 +26,6 @@ $ms-ratio: 								1.2;
 $screen:       "only screen and";
 $breakpoints: (
   'small'  		: '#{$screen} ( max-width: 320px )',
-  'medium'  	: '#{$screen} ( min-width: 321px )  and ( max-width: 49.999em )',
-  'large' 		: '#{$screen} ( min-width: 50em ) '
+  'medium'  	: '#{$screen} ( min-width: 321px )  and ( max-width: 69.999em )',
+  'large' 		: '#{$screen} ( min-width: 70em ) '
 );
